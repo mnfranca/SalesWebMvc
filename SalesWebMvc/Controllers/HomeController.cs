@@ -23,6 +23,15 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult About()
+    {
+        ViewData["Message"] = "Salles Web MVC App from C# Course.";
+        ViewData["Professor"] = "Marcelo França";
+        ViewData["Email"] = "marcelo@email.com";
+
+        return View();
+    }
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {

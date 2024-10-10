@@ -28,3 +28,4 @@
 /home/marcelo/Dropbox/Projetos/C#/SalesWebMvc/SalesWebMvc/obj/Debug/net8.0/SalesWebMvc.pdb
 /home/marcelo/Dropbox/Projetos/C#/SalesWebMvc/SalesWebMvc/obj/Debug/net8.0/SalesWebMvc.genruntimeconfig.cache
 /home/marcelo/Dropbox/Projetos/C#/SalesWebMvc/SalesWebMvc/obj/Debug/net8.0/ref/SalesWebMvc.dll
+/home/marcelo/Dropbox/Projetos/C#/SalesWebMvc/SalesWebMvc/obj/Debug/net8.0/SalesWebMvc.sourcelink.json
