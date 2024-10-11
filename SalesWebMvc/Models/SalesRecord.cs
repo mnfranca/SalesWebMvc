@@ -8,7 +8,7 @@ public class SalesRecord
   public DateTime Date { get; set; }
   public double Amount { get; set; }
   public SaleStatus Status { get; set; }
-  public Seller? Seller { get; set; }
+  public required Seller Seller { get; set; }
 
   public SalesRecord()
   {
