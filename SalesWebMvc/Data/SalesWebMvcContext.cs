@@ -12,5 +12,7 @@ public class SalesWebMvcContext : DbContext
     {
     }
 
-    public DbSet<SalesWebMvc.Models.Department> Department { get; set; } = default!;
+    public DbSet<Department> Department { get; set; } = default!;
+    public DbSet<Department> Seller { get; set; } = default!;
+    public DbSet<Department> SalesRecord { get; set; } = default!;
 }
