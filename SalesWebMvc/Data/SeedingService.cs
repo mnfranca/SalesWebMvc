@@ -26,12 +26,12 @@ public class SeedingService
     Department d3 = new() { Id = 3, Name = "Fashion" };
     Department d4 = new() { Id = 4, Name = "Books" };
 
-    Seller s1 = new() { Id = 1, Name = "Bob Brown", Email = "bob@email.com", BirthDate = new DateTime(1998, 4, 21), BaseSalary = 1000.00, Department = d1 };
-    Seller s2 = new() { Id = 2, Name = "Maria Green", Email = "maria@email.com", BirthDate = new DateTime(1979, 12, 31), BaseSalary = 3500.00, Department = d2 };
-    Seller s3 = new() { Id = 3, Name = "Alex Grey", Email = "alex@email.com", BirthDate = new DateTime(1988, 1, 15), BaseSalary = 2200.00, Department = d1 };
-    Seller s4 = new() { Id = 4, Name = "Martha Red", Email = "martha@email.com", BirthDate = new DateTime(1993, 11, 30), BaseSalary = 3000.00, Department = d4 };
-    Seller s5 = new() { Id = 5, Name = "Donald Blue", Email = "donald@email.com", BirthDate = new DateTime(2000, 1, 9), BaseSalary = 4000.00, Department = d3 };
-    Seller s6 = new() { Id = 6, Name = "Alex Pink", Email = "alexp@email.com", BirthDate = new DateTime(1997, 2, 4), BaseSalary = 3000.00, Department = d2 };
+    Seller s1 = new() { Id = 1, Name = "Bob Brown", Email = "bob@email.com", BirthDate = new DateTime(1998, 4, 21), BaseSalary = 1000.00, DepartmentId = d1.Id };
+    Seller s2 = new() { Id = 2, Name = "Maria Green", Email = "maria@email.com", BirthDate = new DateTime(1979, 12, 31), BaseSalary = 3500.00, DepartmentId = d2.Id };
+    Seller s3 = new() { Id = 3, Name = "Alex Grey", Email = "alex@email.com", BirthDate = new DateTime(1988, 1, 15), BaseSalary = 2200.00, DepartmentId = d1.Id };
+    Seller s4 = new() { Id = 4, Name = "Martha Red", Email = "martha@email.com", BirthDate = new DateTime(1993, 11, 30), BaseSalary = 3000.00, DepartmentId = d4.Id };
+    Seller s5 = new() { Id = 5, Name = "Donald Blue", Email = "donald@email.com", BirthDate = new DateTime(2000, 1, 9), BaseSalary = 4000.00, DepartmentId = d3.Id };
+    Seller s6 = new() { Id = 6, Name = "Alex Pink", Email = "alexp@email.com", BirthDate = new DateTime(1997, 2, 4), BaseSalary = 3000.00, DepartmentId = d2.Id };
 
     SalesRecord r1 = new() { Id = 1, Date = new DateTime(2018, 09, 25), Amount = 11000.0, Status = SaleStatus.Billed, Seller = s1 };
     SalesRecord r2 = new() { Id = 2, Date = new DateTime(2018, 09, 4), Amount = 7000.0, Status = SaleStatus.Billed, Seller = s5 };

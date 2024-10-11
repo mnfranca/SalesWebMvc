@@ -16,6 +16,7 @@ builder.Services.AddScoped<SeedingService>();
 
 // Add services to handle entities
 builder.Services.AddScoped<SellerService>();
+builder.Services.AddScoped<DepartmentService>();
 
 var app = builder.Build();
 
