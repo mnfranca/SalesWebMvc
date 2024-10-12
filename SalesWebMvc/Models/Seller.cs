@@ -6,6 +6,7 @@ namespace SalesWebMvc.Models;
 public class Seller
 {
   public int Id { get; set; }
+
   public required string Name { get; set; }
 
   [DataType(DataType.EmailAddress)]
@@ -19,8 +20,11 @@ public class Seller
   [Display(Name = "Base Salary")]
   [DisplayFormat(DataFormatString = "{0:F2}")]
   public double BaseSalary { get; set; }
+
   public Department? Department { get; set; }
+
   public required int DepartmentId { get; set; }
+
   public ICollection<SalesRecord> Sales { get; set; } = [];
 
   public Seller()
