@@ -27,4 +27,9 @@ public class Department
   {
     return Sellers.Sum(s => s.TotalSales(initial, final));
   }
+
+  public override string ToString()
+  {
+    return Name;
+  }
 }
