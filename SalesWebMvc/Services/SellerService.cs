@@ -31,11 +31,22 @@ public class SellerService
 
   public async Task RemoveAsync(int id)
   {
-    var obj = _context.Seller.Find(id);
-    if (obj != null)
+    try
     {
-      _context.Seller.Remove(obj);
+      bool externalReferente = await _context.SalesRecord.AnyAsync(x => x.Seller.Id == id);
+      if (externalReferente)
+      {
+        throw new IntegrityException("Can't delete seller because he/she has sales.");
+      }
+
+      var obj = _context.Seller.Find(id);
+      _context.Seller.Remove(obj!);
       await _context.SaveChangesAsync();
+    }
+    catch (DbUpdateException e)
+    {
+
+      throw new IntegrityException(e.Message);
     }
   }
 
