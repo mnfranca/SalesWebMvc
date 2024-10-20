@@ -21,6 +21,7 @@ builder.Services.AddScoped<SellerService>();
 builder.Services.AddScoped<DepartmentService>();
 builder.Services.AddScoped<SalesRecordService>();
 
+// Variável da aplicação
 var app = builder.Build();
 
 // Globalization and locale
